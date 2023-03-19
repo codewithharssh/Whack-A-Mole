@@ -226,7 +226,7 @@ font-size:14px;
  <div class="timer-box">
      <i class="fa-regular fa-hourglass"></i>
      <div class="timer">
-          <span>60</span>   
+          <span>45</span>   
      </div>
  </div>
  <div class="score-box">
@@ -332,14 +332,14 @@ let showMole =()=>{
 let hideMole =(moleItem)=>{
    setTimeout(()=>{
      moleItem.classList.remove('mole-appeared');    
-   },580)     
+   },520)     
 }
 
 startGameBtn.addEventListener('click',()=>{
- startTime(60)      
+ startTime(45)      
  startGame = setInterval(() => {
          showMole();
- }, 580)       
+ }, 520)       
  globalStartGame = startGame;
  startGameBtn.style.display = 'none';
 })
