@@ -332,14 +332,14 @@ let showMole =()=>{
 let hideMole =(moleItem)=>{
    setTimeout(()=>{
      moleItem.classList.remove('mole-appeared');    
-   },650)     
+   },620)     
 }
 
 startGameBtn.addEventListener('click',()=>{
  startTime(60)      
  startGame = setInterval(() => {
          showMole();
- }, 650)       
+ }, 620)       
  globalStartGame = startGame;
  startGameBtn.style.display = 'none';
 })
